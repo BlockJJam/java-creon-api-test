@@ -57,17 +57,8 @@
 - gradle 프로젝트를 생성 > build.gradle 확인
 
     ```java
-    lugins {
-        id 'java'
-    }
-    
-    group 'org.example'
-    version '1.0-SNAPSHOT'
-    
-    repositories {
-        mavenCentral()
-    }
-    
+    ...
+  
     dependencies {
         implementation 'org.jvnet.com4j:com4j:2.1'
         implementation 'org.jvnet.com4j:tlbimp:2.1'
@@ -75,10 +66,8 @@
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     }
-    
-    test {
-        useJUnitPlatform()
-    }
+
+    ...
     ```
 
     - com4j에 대한 의존 라이브러리를 설정해주자
