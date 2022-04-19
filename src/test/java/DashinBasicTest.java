@@ -98,6 +98,8 @@ public class DashinBasicTest {
 
             Process p = Runtime.getRuntime().exec("C:\\CREON\\STARTER\\coStarter.exe /prj:cp /id:khk7129 /pwd:woals1! /pwdcert:khk7129!@# /autostart");
             p.waitFor();
+
+            Thread.sleep(5000);
         }catch(Exception e){
             e.printStackTrace();
         }
